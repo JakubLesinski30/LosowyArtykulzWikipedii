@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fae6ca); /* Jasny gradient tła */
+    color: #333; /* Kolor tekstu dla lepszej czytelności */
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Półprzezroczyste tło dla kart */
+    color: #333; /* Ciemny kolor tekstu wewnątrz kart */
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}

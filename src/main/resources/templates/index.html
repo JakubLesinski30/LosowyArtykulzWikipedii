@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Losowy Artykuł z Wikipedii</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Losowy Artykuł z Wikipedii</h1>
+        <div class="card">
+            <div class="card-header text-center">
+                <h2 th:text="${tytul}"></h2>
+            </div>
+            <div class="card-body">
+                <p th:text="${opis}" class="text-center mt-3"></p>
+                <div th:if="${obrazek}" class="text-center mt-3">
+                    <img th:src="${obrazek}" class="img-fluid d-block mx-auto" alt="Obrazek artykułu">
+                </div>
+                <div class="mt-3">
+                    <a th:href="${adresStrony}" class="btn btn-primary" target="_blank">Przejdź do artykułu</a>
+                    <a href="/" class="btn btn-success float-right">Kolejny losowy artykuł</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
